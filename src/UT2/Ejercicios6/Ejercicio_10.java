@@ -9,7 +9,7 @@ package UT2.Ejercicios6;
 
 import java.util.Scanner;
 
-public class Ejercico_10 {
+public class Ejercicio_10 {
 
     public static void main(String[] args) {
 
