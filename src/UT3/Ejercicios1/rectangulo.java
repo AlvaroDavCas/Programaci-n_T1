@@ -62,6 +62,8 @@ public class rectangulo {
             System.out.println("El rectangulo es vertical: ");
         } else if (largo > ancho) {
             System.out.println("El rectangulo es horizontal: ");
+        } else {
+            System.out.println("Es un cuadrado");
         }
     }
 
