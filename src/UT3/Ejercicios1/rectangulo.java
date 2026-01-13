@@ -17,16 +17,25 @@ se debería desplegar así:
 ************
 ************
 ************
- */
+*/
 
 public class rectangulo {
 
     private int largo;
     private int ancho;
 
+    public rectangulo() {
+        this(2, 5);
+    }
+
     public rectangulo(int ancho, int largo) {
-        this.ancho = ancho;
-        this.largo = largo;
+        if (ancho > 0 && largo > 0) {
+            this.ancho = ancho;
+            this.largo = largo;
+        } else {
+            this.ancho = 2;
+            this.largo = 5;
+        }
     }
 
     public int getLargo() {
@@ -79,13 +88,5 @@ public class rectangulo {
             }
             System.out.println();
         }
-    }
-
-    @Override
-    public String toString() {
-        return "rectangulo{" +
-                "largo=" + largo +
-                ", ancho=" + ancho +
-                '}';
     }
 }

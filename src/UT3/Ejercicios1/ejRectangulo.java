@@ -4,7 +4,7 @@ public class ejRectangulo {
 
     public static void main(String[] args) {
 
-        rectangulo rectan = new rectangulo(5, 20);
+        rectangulo rectan = new rectangulo();
         rectan.dimensiones();
         System.out.println("Área: " + rectan.area());
         System.out.println("Perímetro: " + rectan.perimetro());
