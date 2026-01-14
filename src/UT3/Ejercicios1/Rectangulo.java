@@ -19,16 +19,16 @@ se debería desplegar así:
 ************
 */
 
-public class rectangulo {
+public class Rectangulo {
 
     private int largo;
     private int ancho;
 
-    public rectangulo() {
+    public Rectangulo() {
         this(2, 5);
     }
 
-    public rectangulo(int ancho, int largo) {
+    public Rectangulo(int ancho, int largo) {
         if (ancho > 0 && largo > 0) {
             this.ancho = ancho;
             this.largo = largo;
