@@ -47,12 +47,15 @@ public class Persona {
 
     public Persona(String nombre) {
         this.nombre = nombre;
+        this.sexo = 'H';
+        this.dni = generaDNI();
     }
 
     public Persona(String nombre, int edad, char sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
+        this.dni = generaDNI();
     }
 
     public Persona(String nombre, int edad, char sexo, int peso, int altura) {
@@ -61,8 +64,8 @@ public class Persona {
         this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
+        this.dni = generaDNI();
     }
-
 
     public String getNombre() {
         return nombre;
@@ -82,10 +85,6 @@ public class Persona {
 
     public String getDni() {
         return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
     }
 
     public char getSexo() {
@@ -112,8 +111,9 @@ public class Persona {
         this.altura = altura;
     }
 
-    public int calcularIMC() {
-        double imc = peso / (altura * altura);
+    public double calcularIMC() {
+
+        double imc = (double) peso / (altura * altura);
         if (imc < 20) {
             return -1;
         } else if (imc <= 25) {
@@ -124,10 +124,26 @@ public class Persona {
     }
 
     public boolean esMayorDeEdad() {
-        if (edad <= 0) {
-            return false;
-        } else {
-            return true;
-        }
+
+        return edad >= 18;
     }
+
+    private char comprobarSexo() {
+
+        return (sexo == 'H' || sexo == 'M') ? sexo : 'H';
+    }
+
+    @Override
+    public String toString() {
+
+        return "El nombre de la persona es " + nombre + " tiene " + edad + " años, tiene el Nº " + dni + " de DNI, es " + sexo + " ttiene el peso de " + peso + " Kg y una altura " + altura + " cm";
+    }
+
+    private String generaDNI() {
+
+        int numero = (int) (Math.random() * 100000000);
+        char[] letras = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+        return numero + "" + letras[numero % 23];
+    }
+
 }
