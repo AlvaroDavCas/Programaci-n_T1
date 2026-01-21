@@ -20,7 +20,7 @@ public class EjPersona {
         System.out.print("Introduce el peso (kg): ");
         int peso = scanner.nextInt();
 
-        System.out.print("Introduce la altura (m): ");
+        System.out.print("Introduce la altura A(m): ");
         int altura = scanner.nextInt();
 
         Persona persona = new Persona(nombre, edad, sexo, peso, altura);
