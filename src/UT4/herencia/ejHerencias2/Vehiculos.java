@@ -14,6 +14,6 @@ public class Vehiculos {
     }
 
     public String toString() {
-        return "El coche es de color " + color + " del modelo " + modelo + " con un precio " + precio + " y de la marca " + marca;
+        return "Es de color " + color + " del modelo " + modelo + " con un precio " + precio + " y de la marca " + marca;
     }
 }
