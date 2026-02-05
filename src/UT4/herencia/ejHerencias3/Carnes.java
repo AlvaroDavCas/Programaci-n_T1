@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Carnes extends Platos{
 
-    String coccion;
+    String[] coccion;
 
     public Carnes(String nombre, int precio, String coccion) {
         super(nombre, precio);
-        this.coccion = coccion;
+        this.coccion = new String[]{"Poco hecho", "Al punto", "Muy hecho", "Carbonizado"};
     }
 
     public String toString() {
