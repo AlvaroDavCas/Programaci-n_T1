@@ -1,7 +1,5 @@
 package UT4.herencia.ejHerencias3;
 
-import java.util.List;
-
 public class Carnes extends Platos{
 
     String[] coccion = {"Poco hecho", "Al punto", "Muy hecho", "Carbonizado"};
