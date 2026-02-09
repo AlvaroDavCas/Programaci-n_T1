@@ -4,7 +4,7 @@ public class Primeros extends Platos{
 
     boolean compartir;
 
-    public Primeros(String nombre, int precio, boolean compartir) {
+    public Primeros(String nombre, double precio, boolean compartir) {
         super(nombre, precio);
         this.compartir = compartir;
     }

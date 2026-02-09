@@ -4,14 +4,20 @@ import java.util.List;
 
 public class Carnes extends Platos{
 
-    String[] coccion;
+    String[] coccion = {"Poco hecho", "Al punto", "Muy hecho", "Carbonizado"};
 
-    public Carnes(String nombre, int precio, String coccion) {
+    private int estado;
+
+    public Carnes(String nombre, double precio, String coccion) {
         super(nombre, precio);
-        this.coccion = new String[]{"Poco hecho", "Al punto", "Muy hecho", "Carbonizado"};
+        if (estado >= 0 && estado < coccion.length()) {
+            this.estado = estado;
+        } else {
+            this.estado = 1;
+        }
     }
 
     public String toString() {
-        return super.toString() + "El punto de coccion de la carne es" + coccion;
+        return super.toString() + "El punto de coccion de la carne es" + coccion[estado];
     }
 }

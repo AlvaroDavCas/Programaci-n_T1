@@ -3,11 +3,15 @@ package UT4.herencia.ejHerencias3;
 public class Platos {
 
     String nombre;
-    int precio;
+    double precio;
 
-    public Platos(String nombre, int precio) {
+    public Platos(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
+    }
+
+    public double getPrecio() {
+        return precio;
     }
 
     public String toString() {

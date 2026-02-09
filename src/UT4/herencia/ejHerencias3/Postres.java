@@ -4,9 +4,13 @@ public class Postres extends Platos{
 
     boolean azucar;
 
-    public Postres(String nombre, int precio, boolean azucar) {
+    public Postres(String nombre, double precio, boolean azucar) {
         super(nombre, precio);
         this.azucar = azucar;
+    }
+
+    public boolean azucar() {
+        return azucar;
     }
 
     public String toString() {
