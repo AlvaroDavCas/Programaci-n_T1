@@ -16,7 +16,7 @@ public class Usuario {
         this.telegram = telegram;
     }
 
-    public Notificador getCanalPreferido() {
-        Email
-    }
+//    public Notificador getCanalPreferido() {
+//        Email
+//    }
 }
