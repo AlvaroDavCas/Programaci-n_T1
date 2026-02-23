@@ -2,14 +2,15 @@ package UT4.repaso.ejercicio2;
 
 public class Circulo extends Figura {
 
-    public Circulo(String color) {
+    private double radio;
+
+    public Circulo(String color, double radio) {
         super(color);
+        this.radio = radio;
     }
 
-    @Override
     public double calcularArea() {
-        return 0;
+        return Math.PI * (radio * radio);
     }
-
 
 }
