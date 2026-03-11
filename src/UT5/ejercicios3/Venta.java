@@ -14,4 +14,16 @@ public class Venta {
         this.videojuego = videojuego;
         this.fechaVenta = fechaVenta;
     }
+
+    public Clientes getClientes() {
+        return clientes;
+    }
+
+    public List<Videojuego> getVideojuego() {
+        return videojuego;
+    }
+
+    public LocalDate getFechaVenta() {
+        return fechaVenta;
+    }
 }

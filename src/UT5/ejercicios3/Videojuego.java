@@ -20,4 +20,22 @@ public class Videojuego {
         this.stock = stock;
         this.codigoIdentificador = UUID.randomUUID();
     }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public UUID getCodigoIdentificador() {
+        return codigoIdentificador;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void venderUnidad() {
+        if (stock > 0) {
+            stock --;
+        }
+    }
 }
